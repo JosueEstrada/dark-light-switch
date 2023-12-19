@@ -1,0 +1,80 @@
+@use "reset";
+@use "breakpoints";
+@use "variables";
+@use "themes";
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  gap: 2rem;
+  height: 64px;
+  &__logo {
+  }
+  &__nav {
+  }
+  &__nav-link {
+    display: inline-block;
+    padding-inline: 2rem;
+  }
+  &__switch {
+    user-select: none;
+    &-checkbox {
+      &:checked ~ .header__switch-label {
+        .header__switch-label--moon {
+        }
+        .header__switch-label--sun {
+        }
+        .header__switch-label--circle {
+          transform: translateX(100%);
+        }
+      }
+    }
+    &-label {
+      display: flex;
+      border: 0.125rem solid transparent;
+      border-radius: 1rem;
+      cursor: pointer;
+      background-color: var(--primary-color);
+
+      &--moon {
+        color: var(--secondary-color);
+      }
+
+      &--sun {
+        color: var(--secondary-color);
+      }
+      &--circle {
+        position: absolute;
+        font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200;
+        color: var(--secondary-color);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+.main {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  &__body {
+    margin-bottom: 1rem;
+    line-height: 2;
+  }
+  &__autor {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+}

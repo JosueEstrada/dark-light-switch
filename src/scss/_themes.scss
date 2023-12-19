@@ -1,0 +1,32 @@
+:root {
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary-color: red;
+    --secondary-color: #e7e7e7;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: rgb(0, 255, 0);
+    --secondary-color: hsl(0, 0%, 10%);
+  }
+}
+
+html[data-theme="light"] {
+  --primary-color: red;
+  --secondary-color: #e7e7e7;
+}
+
+html[data-theme="dark"] {
+  --primary-color: rgb(0, 255, 0);
+  --secondary-color: hsl(0, 0%, 10%);
+}
+
+/* .dark-mode {
+  --primary-color: #f0f0f0;
+  --secondary-color: #181818;
+} */
