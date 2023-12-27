@@ -1,11 +1,10 @@
 # Dark-Light Switch
 
-This project is a simple implementation of a theme switcher that allows users to toggle between a dark and light theme. Using localstorage, data attributes and CSS variables.
+This project is a simple implementation of a theme switcher that allows users to toggle between a dark and light theme. Using localstorage, data attributes and SASS.
 
 ## Table of Contents
 
 - [Installation](#installation)
-- [Getting Started](#getting-started)
 - [Acknowledgements](#acknowledgements)
 
 ## Installation
