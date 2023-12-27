@@ -4,26 +4,26 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --primary-color: red;
-    --secondary-color: #e7e7e7;
+    --primary-color: hsl(327, 73%, 3%);
+    --secondary-color: hsl(0, 0%, 98%);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary-color: rgb(0, 255, 0);
-    --secondary-color: hsl(0, 0%, 10%);
+    --primary-color: hsl(111, 100%, 54%);
+    --secondary-color: hsl(327, 73%, 3%);
   }
 }
 
 html[data-theme="light"] {
-  --primary-color: red;
-  --secondary-color: #e7e7e7;
+  --primary-color: hsl(327, 73%, 3%);
+  --secondary-color: hsl(0, 0%, 98%);
 }
 
 html[data-theme="dark"] {
-  --primary-color: rgb(0, 255, 0);
-  --secondary-color: hsl(0, 0%, 10%);
+  --primary-color: hsl(111, 100%, 54%);
+  --secondary-color: hsl(327, 73%, 3%);
 }
 
 /* .dark-mode {

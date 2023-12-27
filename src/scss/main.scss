@@ -3,13 +3,18 @@
 @use "variables";
 @use "themes";
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
   gap: 2rem;
   height: 64px;
   &__logo {
@@ -76,5 +81,23 @@
     font-style: italic;
     font-weight: 400;
     margin-bottom: 1rem;
+  }
+}
+
+.footer {
+  margin-top: auto;
+  margin-bottom: 1rem;
+  &__text {
+    text-align: center;
+  }
+  &__icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    svg {
+      height: 2rem;
+    }
   }
 }
